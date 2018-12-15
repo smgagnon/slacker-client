@@ -89,8 +89,6 @@ var messages = [
 
 			}
 
-
-
 			$( document ).ready(function() {
 
 				$("#message").keydown(function(event){

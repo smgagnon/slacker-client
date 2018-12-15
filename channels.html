@@ -13,8 +13,38 @@
 				height : 100%;
 				margin : 0px;
 			}
+			nav{
+				height: 2.9rem;
+				display: block;
+			}
 			div {
 				display :inline-block;
+			}
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				background-color: #333;
+				width : 100%;
+				float: right;
+				font-size: 1em;
+				margin : 1em, auto;
+			}
+			li {
+				float: right;
+			}
+			#stacker{
+				float: left;
+			}
+			li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			li a:hover {
+				background-color: #111;
 			}			
 			.main-header {
 				height : 30px;
@@ -81,12 +111,11 @@
 				height: 100%;
 				width: 15%;
 				position: fixed;
-				z-index: 1;
-				top: 0;
+
 				left: 0;
 				background-color: #471c9c;
 				overflow-x: hidden;
-				padding-top: 10px;
+				
 			}
 			.sidenav a {
 				padding: 6px 6px 10px 15px;
@@ -108,13 +137,21 @@
 				width : 100%;
 				font-size: 1em;
 			}
+			
 		</style>
 	</head>
 	<body>
+		<nav>
+		<ul>
+ 			<li id="stacker"><a href="channels.html">#stacker</a></li>
+ 			<li><a href="login.html">Logout</a></li>
+ 			<li><a href="profile.html">Profile</a></li>	
+		</ul>
+	</nav>
 		<aside>
 		<div class="sidenav">
-			<a href="#">Stephanie</a>
-			<a class="channels" href="#">Channels</a>
+			<a href="profile.html">Stephanie</a>
+			<a class="channels" href="channels.html">Channels</a>
 			<a href="#">Sports</a>
 			<a href="#">Shows</a>
 			<a href="#">Movies</a>
