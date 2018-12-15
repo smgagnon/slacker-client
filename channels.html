@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="messages.js"></script>	
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+		<style>
+			* {
+				box-sizing: border-box;
+				font-family: 'Montserrat', sans-serif;
+			}
+			html, body {
+				height : 100%;
+				margin : 0px;
+			}
+			div {
+				display :inline-block;
+			}			
+			.main-header {
+				height : 30px;
+			}
+			.main-section {
+				display :inline-block;
+				width : 85%;	
+				float : right;		
+				padding : 10px 20px;	
+				height: 100%;
+				margin-top : 2.5rem;
+			}
+			#messages-list {
+				margin : auto 0;
+    			height: 30em;
+    			overflow-y: scroll;
+    			border: 1px blue solid;		
+    			padding: 0.2rem 1rem;		
+			}
+			.message-row {
+				display: inline-block;
+				width :100%;
+				margin-bottom: 20px;
+			}
+			.message-image {
+				display : inline-block;
+				width : 10%;	
+				float : left;
+				min-width: 30px;
+				max-width: 30px;			
+			}
+			.message-image img {
+				max-width: 60px;
+			}
+			.message-meta-text {
+				display : inline-block;
+				width : 90%;	
+				float : right;	
+				padding : 0.2em 0.2em 0.2em 0.2em;					
+			}				
+			.message-text {
+				display : inline-block;
+				width : 100%;	
+				float : left;	
+			}	
+			.message-time {
+				display : inline-block;
+				font-size: 0.8rem;	
+			}				
+			.message-author {
+				display: inline-block;
+				vertical-align: top;				
+				font-weight: bold;	
+				padding : 0.2em 2em 0.2em 0em;
+				width : 5rem;	
+			}		
+			.message-box {
+				width : 80%;
+				font-size: 1em;
+				margin : 1em, auto;
+				height : 5em;
+			}
+			.sidenav {
+				height: 100%;
+				width: 15%;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #471c9c;
+				overflow-x: hidden;
+				padding-top: 10px;
+			}
+			.sidenav a {
+				padding: 6px 6px 10px 15px;
+				text-decoration: none;
+				font-size: 15px;
+				color: #afb7cc;
+				display: block;
+			}
+			.sidenav a:hover {
+				color: #f1f1f1;
+			}
+			.channels{
+				text-indent: 25px;
+			}
+			footer {
+				margin : 1em 0em;
+			}
+			#message {
+				width : 100%;
+				font-size: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<aside>
+		<div class="sidenav">
+			<a href="#">Stephanie</a>
+			<a class="channels" href="#">Channels</a>
+			<a href="#">Sports</a>
+			<a href="#">Shows</a>
+			<a href="#">Movies</a>
+			<a href="#">Pets</a>
+		</div>
+	</aside>
+		<section class="main-section">	
+			<section id="messages-list">
+		
+			</section>
+			<footer>
+				<textarea id="message" rows="4" cols="100" placeholder="Type message"></textarea> 
+			</footer>			
+		</section>
+	</body>
+</html>
