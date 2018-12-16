@@ -1,78 +1,122 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <style type="text/css">
+    <head>
+        <meta charset ="UTF-8">
+        <title> Stephanie Gagnon's Profile </title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">   
+    </head>
+    <style type="text/css">
     * {
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-img {
-  border-radius: 50%;
-  width: 320px;
-  margin:25px;
-}
-aside {
-  float:left;
-  margin:35px;
-  width: 31%;
-}
-h1 {
-  color:#471c9c;
-  font-weight: normal;
-  line-height: 0em;
-  padding-top:30px;
-}
-.account {
-  display:inline-block;
-  color:#471c9c;
-  padding:0px 20px;
-  width:23rem;
-  font-weight: normal;
-}
-.aboutme {
-  color:#858b9b;
-}
-.contact {
-  color:#471c9c;
-  display:inline-block;
-  width:120px;
-  padding:8px;
-}
-p {
-  color:black;
-}
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 2px solid #471c9c;
-    margin: 1em 0;
-    padding: 0;
-}
-  </style>
-
-  <head>
-    <meta charset ="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Stephanie Gagnon's Profile </title>
-   	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">   
-  </head>
-  <body>
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+    nav{
+        height: 2.9rem;
+        display: block;
+    }
+    div {
+        display :inline-block;
+    }
+    body{
+        margin:0;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        width : 100%;
+        float: right;
+        font-size: 1em;
+        margin : 1em, auto;
+    }
+    li {
+        float: right;
+    }
+    #stacker{
+        float: left;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #111;
+    }
+    img {
+        border-radius: 50%;
+        width:100%;
+        margin-top: 2rem;
+    }
+    aside {
+        float:left;
+        width: 29%;
+        padding: 1rem;
+    }
+    main{
+        float: right;
+        width: 70%;
+    }
+    h1 {
+        color:#471c9c;
+        font-weight: normal;
+        line-height: 0em;
+        padding-top:30px;
+    }
+    .account {
+        display:inline-block;
+        color:#471c9c;
+        padding:0px 20px;
+        font-weight: normal;
+    }
+    .aboutme {
+      color:#858b9b;
+      line-height:1.5;
+    }
+    .contact {
+      color:#471c9c; 
+      display:inline-block;
+      width:120px;
+      line-height:1.5;
+    }
+    p {
+      color:black;
+    }
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 2px solid #471c9c;
+      margin: 1em 0;
+      padding: 0;
+    }
+    </style>
+    <body>
+    <nav>
+        <ul>
+            <li id="stacker"><a href="channels.html">#stacker</a></li>
+            <li><a href="login.html">Logout</a></li>
+            <li><a href="profile.html">Profile</a></li> 
+        </ul>
+    </nav>
     <aside>
-      <img 
-src ="https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-9/46049513_10155780400325849_7469140516509057024_n.jpg?_nc_cat=103&_nc_ht=scontent-yyz1-1.xx&oh=bcdcdfc79836135e1a004ef448c69e67&oe=5C9CBBB9" alt="Stephanie Gagnon's Profile Picture"/>
+      <img src ="https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-9/46049513_10155780400325849_7469140516509057024_n.jpg?_nc_cat=103&_nc_ht=scontent-yyz1-1.xx&oh=bcdcdfc79836135e1a004ef448c69e67&oe=5C9CBBB9" alt="Stephanie Gagnon's Profile Picture"/>
     </aside>
-    <main>  
-      <section>
+    <main>
+    <section>
         <h1>Stephanie Gagnon</h1>
         <h3><span class="account">@smgagnon</span>
           <span class="account"><i class="fas fa-map-marker-alt"></i> Toronto</span</h3>   
-      </section>
-      <section> 
+    </section>
+    <section> 
         <p class="aboutme"> Stephanie is a professional photographer and videographer specializing in weddings and special events. Growing up in a small town she loved spending her time outside in nature practicing photography and creating short commercials for local merchants. 
         <br>
         <br>
-She attended 4 years at Western University and Fanshawe College in the Media Theory and Production program along with 6 months at Henry’s photography taking classes. She looks forward to traveling the world and capturing breathtaking moments through photography and videography. </p>
+        She attended 4 years at Western University and Fanshawe College in the Media Theory and Production program along with 6 months at Henry’s photography taking classes. She looks forward to traveling the world and capturing breathtaking moments through photography and videography. </p>
       </section>
         <hr>
       <section>
